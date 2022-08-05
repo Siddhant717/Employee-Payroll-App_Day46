@@ -1,6 +1,5 @@
 // UC1:- Modify Employee Payroll Class with new Attributes and Getters and Setters
-  class EmployeePayrollData {
-
+class EmployeePayrollData {
     // getter and setter method
     get id() { return this._id; }
     set id(id) {
@@ -42,13 +41,13 @@
 
     get startDate() { return this._startDate; }
     set startDate(startDate) {
-        this._startDate = startDate; 
+        this._startDate = startDate;
     }
     // toString() method
     toString() {
         const options = { year: 'numeric', month: 'long', day: 'numeric' };
         const empDate = !this.startDate ? "undefined" : this.startDate.toLocaleDateString("en-US", options);
-        return "id=" + this.id + ", name=" + this.name + ", gender=" + this.gender + 
+        return "id=" + this.id + ", name=" + this.name + ", gender=" + this.gender +
             ", profilePic=" + this.profilePic + ", department=" + this.department +
             ", salary=" + this.salary + ", startDate=" + empDate + ", note=" + this.note;
     }
